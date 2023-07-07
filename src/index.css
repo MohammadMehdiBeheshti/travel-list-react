@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: viga;
+	src: url("./Viga-Regular.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: viga;
+	font-size: 1.6rem;
+	height: 100vh;
+	background-color: #513a2b;
+	color: #ffffff;
+}
+
+.btn {
+	height: 5rem;
+	font-size: 2rem;
+	background-color: #70c6a0;
+	color: #1e1e1e;
+	border: none;
+	border-radius: 0.5rem;
+}
+
+.mini-btn {
+	height: 2.5rem;
+	padding: 0 0.5rem;
+	background-color: #ffebb2;
+	color: #1e1e1e;
+	border-radius: 0.3rem;
+}
+
+.input {
+	height: 5rem;
+	padding: 0 1.2rem;
+	font-size: 1.6rem;
+	background-color: #ffebb2;
+	color: #1e1e1e;
+	border-radius: 0.5rem;
+	border: none;
+	outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+.center {
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.def-border {
+	width: fit-content;
+	border: 0.1rem solid #ffebb2;
+	border-radius: 0.3rem;
+}
+
+.contain {
+	width: 100%;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 576px) {
+	.contain {
+		width: 54rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.contain {
+		width: 72rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.contain {
+		width: 96rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.contain {
+		width: 114rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	.contain {
+		width: 137rem;
+	}
+}
